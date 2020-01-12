@@ -63,6 +63,7 @@
     .btn.active {
       background-color: #666;
       color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     }
 
     #panel {
@@ -146,6 +147,11 @@
     .show {
       display: block;
     }
+
+    #all.btn.active{
+      background-color: white;
+      color: black;
+    }
   </style>
 </head>
 
@@ -155,7 +161,7 @@
     <a href="https://hemchandrarejarla.github.io/customCatalogue/MyCustomCatalog.html"
       class="logo">MyProductCatalogue</a>
     <div id="myBtnContainer" class="header-right">
-      <button class="btn active" onclick="filterSelection('all');hide();"> Show all</button>
+      <button id="all" class="btn active" onclick="filterSelection('all');hide();"> Show all</button>
       <button class="btn" onclick="filterSelection('general');hide();"> General</button>
       <button class="btn" onclick="filterSelection('all');hide();hideGeneral();"> Others</button>
     </div>
